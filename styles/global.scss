@@ -7,11 +7,13 @@
 html {
   font: $font-l;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   display: block;
   width: 100%;
+  overflow-x: hidden;
 }
 
 h1 {

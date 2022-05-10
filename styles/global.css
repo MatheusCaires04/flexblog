@@ -11,11 +11,13 @@
 html {
   font: 16px "Nunito", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   display: block;
   width: 100%;
+  overflow-x: hidden;
 }
 
 h1 {
