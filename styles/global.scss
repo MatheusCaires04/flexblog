@@ -1,0 +1,67 @@
+@import "./variables";
+
+* {
+  @include resetCSS;
+}
+
+html {
+  font: $font-l;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font-size: $font-h1;
+}
+
+h2 {
+  font-size: $font-h2;
+}
+
+span {
+  font-size: $font-span;
+}
+
+a {
+  font-size: $font-link;
+}
+
+p {
+  font-size: $font-p;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.section {
+  width: 100%;
+}
+
+.container {
+  @include containerWidth;
+}
+
+.container:nth-child(1),
+.container:nth-child(2),
+.container:nth-child(5),
+.container:nth-child(7) {
+  border-bottom: none;
+}
+
+@media (max-width: 670px) {
+  html {
+    font: $font-m;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font: $font-s;
+  }
+}
